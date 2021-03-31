@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Icons-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Browser otimized for mobile-->
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css"><!--Materialize CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--Normal CSS-->
+</head>
+<body>
+
+    <!-- Modal to Sign In -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mail</i>
+                  <input id="icon_email" type="email" class="validate">
+                  <label for="icon_email">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">https</i>
+                    <input id="icon_password" type="password" class="validate">
+                    <label for="icon_password">Senha</label>
+                  </div>
+              </div><!-- row -->
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#modal2" class="modal-trigger modal-close waves-effect waves-green btn-flat"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
+        </div>
+    </div><!-- modal1 -->
+
+    <!-- Modal to Sign Up -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+        <h4>Registre-se</h4>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Nome</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Sobrenome</label>
+                  </div>
+
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mail</i>
+                  <input id="icon_email" type="email" class="validate">
+                  <label for="icon_email">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">https</i>
+                    <input id="icon_password" type="password" class="validate">
+                    <label for="icon_password">Senha</label>
+                  </div>
+              </div><!-- row -->
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+        <a href="#modal1" class="modal-trigger modal-close waves-effect waves-green btn-flat"><span style="color: red;text-decoration: underline;">Já tem um login?</span></a>
+        </div>
+    </div><!-- modal2 -->
+
+    <!-- Desktop Menu -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Yu-gi-oh</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a><!--icone hamburguer para mobile-->
+            <ul class="right hide-on-med-and-down"><!-- ir pra direita e esconder ao ter resolução media ou baixa -->
+                <li><a href="Cards.html">Cards</a></li>
+                <li><a href="Personagens.html">Personagens</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <a class="waves-effect waves-light btn red modal-trigger" href="#modal1">Login</a>
+                <a class="waves-effect waves-light btn red modal-trigger" href="#modal2">Sign up</a>
+            </ul>
+            </div><!-- nav-wrapper -->
+            <div style="float: right;" class="hide-on-desktop">
+                <a class="waves-effect waves-light btn red modal-trigger" href="#modal1">Login</a>
+                <a class="waves-effect waves-light btn red modal-trigger" href="#modal2">Sign up</a>
+            </div>
+        </div><!-- container -->
+      </nav>
+
+    <!-- Mobile Menu -->
+      <ul class="sidenav" id="mobile-demo">
+            <li><a href="Cards.html">Cards</a></li>
+            <li><a href="Personagens.html">Personagens</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+      </ul><!-- Side Nav for Mobile -->
+
+    
+    <script src="js/jquery-3.5.1.js"></script><!-- Jquery CSS-->
+    <script src="js/materialize.min.js"></script><!-- Materialize JS-->
+    <script src="js/functions.js"></script><!-- Normal JS-->
+</body>
+</html>
