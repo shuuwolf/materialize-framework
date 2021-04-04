@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+body,html{
+    height: 100%;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.38'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%230a0311' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2312071c' cx='50' cy='100' r='50'/%3E%3Cg fill='%23160b26' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23180e31' cx='50' cy='200' r='50'/%3E%3Cg fill='%231b0f3c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e1047' cx='50' cy='300' r='50'/%3E%3Cg fill='%23201153' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2322125f' cx='50' cy='400' r='50'/%3E%3Cg fill='%2323126b' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23241378' cx='50' cy='500' r='50'/%3E%3Cg fill='%23251384' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23261391' cx='50' cy='600' r='50'/%3E%3Cg fill='%2325139e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%232513ab' cx='50' cy='700' r='50'/%3E%3Cg fill='%232312b9' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232112c7' cx='50' cy='800' r='50'/%3E%3Cg fill='%231e11d4' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23190fe2' cx='50' cy='900' r='50'/%3E%3Cg fill='%23120df1' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23050bff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
 /***Classes Gerais***/
 
 .container{
@@ -21,10 +29,115 @@
     display: none;
 }
 
+/***Tipografia***/
+
+p.description{
+    position: relative;
+    bottom: -200px;
+    color: #c6c9d8;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 2%;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title{
+    color: white;
+    text-shadow: 2px 2px 2px red;
+}
+
+/***Sessão Do Topo***/
+
+.bg-top{
+    background-image:url('../images/background-top.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    max-width: 1200px;
+    min-height: 70%;
+    margin: 0 auto;
+}
+
+/***Sessão Lead***/
+
+section.lead .container{
+    background: black;
+}
+
+.hero-cards-anim {
+    position: relative;
+    width: 100%;
+}
+
+#card1 {
+    animation: float 3.5s ease-in-out infinite;
+    height: 300px;
+    left: 0px;
+}
+
+#card2 {
+    animation: float 3s ease-in-out infinite;
+    height: 300px;
+    left: 0px;
+}
+
+#card3 {
+    animation: float 4s ease-in-out infinite;
+    height: 350px;
+    position: relative;
+    left: 0px;
+    top:25px;
+}
+
+#card4 {
+    animation: float 3s ease-in-out infinite;
+    height: 300px;
+    left: 0px;
+}
+
+#card5 {
+    animation: float 4s ease-in-out infinite;
+    height: 300px;
+
+}
+
 /***MEDIA QUERIES***/
 
 @media screen and (max-width:992px){
     .hide-on-desktop{
         display: block;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .bg-top{
+        background: none;
+    }
+
+    p.description{
+        position: static;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .hero-cards-anim img {
+        left: 13%;
+    }
+}
+
+/***Animações***/
+
+@keyframes float{
+    0%{
+        transform: translatey(0);
+    }
+
+    50%{
+        transform: translatey(-20px);
+    }
+
+    0%{
+        transform: translatey(0);
     }
 }
