@@ -29,6 +29,11 @@ body,html{
     display: none;
 }
 
+section{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
 /***Tipografia***/
 
 p.description{
@@ -62,45 +67,71 @@ p.description{
 
 /***Sessão Lead***/
 
-section.lead .container{
-    background: black;
+section.lead{
+    background: url('/images/background-cards.svg');
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+section.lead .container h2{ /***Copied From w3Scholl***/
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .hero-cards-anim {
     position: relative;
     width: 100%;
+    text-align: center;
+    left: 2%;
+}
+
+.hero-cards-anim img{
+    box-shadow: 2px 2px 20px 2px black;
 }
 
 #card1 {
     animation: float 3.5s ease-in-out infinite;
-    height: 300px;
+    height: 30%;
+    width: 30%;
+    position: relative;
     left: 0px;
 }
 
 #card2 {
     animation: float 3s ease-in-out infinite;
-    height: 300px;
-    left: 0px;
+    height: 30%;
+    width: 35%;
+    position: relative;
+    left: -30px;
+    top:25px;
+    z-index: 4;
 }
 
 #card3 {
     animation: float 4s ease-in-out infinite;
-    height: 350px;
+    height: 30%;
+    width: 30%;
     position: relative;
-    left: 0px;
-    top:25px;
+    left: -60px;
 }
 
-#card4 {
-    animation: float 3s ease-in-out infinite;
-    height: 300px;
-    left: 0px;
+.lead-tell{
+    text-align: center;
 }
 
-#card5 {
-    animation: float 4s ease-in-out infinite;
-    height: 300px;
+.lead-tell h3{
+    color: white;
+}
 
+.lead-tell p{
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 /***MEDIA QUERIES***/
@@ -113,7 +144,7 @@ section.lead .container{
 
 @media only screen and (max-width:768px){
     .bg-top{
-        background: none;
+        background-image:url('../images/background-top2.jpg');
     }
 
     p.description{
@@ -141,3 +172,12 @@ section.lead .container{
         transform: translatey(0);
     }
 }
+
+@-webkit-keyframes glow {   /***Copied From w3Scholl***/
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
