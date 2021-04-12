@@ -134,6 +134,10 @@ section.lead .container h2{ /***Copied From w3Scholl***/
     margin-bottom: 10px;
 }
 
+.lead-tell a{
+    text-shadow: 1px 1px 3px black;
+}
+
 /***MEDIA QUERIES***/
 
 @media screen and (max-width:992px){
