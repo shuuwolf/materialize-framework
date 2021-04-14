@@ -10,7 +10,7 @@
 <body>
 
     <!-- Modal to Sign In -->
-    <div id="modal1" class="modal">
+    <div id="modal_login" class="modal">
         <div class="modal-content">
         <h4>Login</h4>
         <div class="">
@@ -35,12 +35,12 @@
           </div><!-- row -->
         </div><!-- modal-content -->
         <div class="modal-footer">
-            <a href="#modal2" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
+            <a href="#modal_register" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
         </div>
     </div><!-- modal1 -->
 
     <!-- Modal to Sign Up -->
-    <div id="modal2" class="modal">
+    <div id="modal_register" class="modal">
         <div class="modal-content">
         <h4>Registre-se</h4>
         <div class="">
@@ -72,7 +72,7 @@
                     <button class="btn" type="submit" name="action">Entrar</button>
                   </div>
                 </div>
-              </div><!-- row -->
+              </div>
             </form>
           </div>
         </div>
@@ -82,11 +82,13 @@
     </div><!-- modal2 -->
 
     <!-- Desktop Menu -->
-    <nav>
+    <nav class="nav-desktop">
         <div class="container">
             <div class="nav-wrapper">
-            <a href="#!" class="brand-logo" style="margin-left: -30px;">Yu-gi-oh</a>
-            <ul class="">
+            <div class="on-title" style="text-align: center;">
+              <a href="#!" class="brand-logo">Yu-gi-oh</a>
+            </div>
+            <ul class="flex-nav">
                 <li><a href="Cards.html">Cards</a></li>
                 <li><a href="Personagens.html">Personagens</a></li>
                 <li><a href="Contato.html">Contato</a></li>
@@ -94,10 +96,13 @@
                 <a class="btn modal-trigger" href="#modal_register">Registrar</a>
             </ul>
             </div><!-- nav-wrapper -->
-            <div style="float: right;" class="hide-on-desktop">
-                <a class="btn modal-trigger" href="#modal_login">Login</a>
-                <a class="btn modal-trigger" href="#modal_register">Registrar</a>
+            <div style="float: left;" class="hide-on-desktop">
+              <a href="#"><img src="images/Hamburger_icon.svg.png"></a>
             </div>
+            <div style="float: right;" class="hide-on-desktop">
+                <a class="btn-mobile modal-trigger" href="#modal_login">Login</a>
+                <a class="btn-mobile modal-trigger" href="#modal_register">Registrar</a>
+            </div><!-- hide-on-desktop -->
         </div><!-- container -->
       </nav>
 
