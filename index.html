@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Browser otimized for mobile-->
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> <!-- Jquery Modal-->
     <title>Yu-gi-oh - Database</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"><!--Normal CSS-->
 </head>
@@ -13,73 +17,23 @@
     <div id="modal_login" class="modal">
         <div class="modal-content">
         <h4>Login</h4>
-        <div class="">
-            <form class="">
-              <div class="">
-                <div class="">
-                  <!-- icon here -->
-                  <input type="email" class="validate">
-                  <label>Email</label>
-                </div>
-
-                <div class="input-field col s12">
-                  <!-- icon here -->
-                  <input type="password" class="validate">
-                  <label>Senha</label>
-                </div>
-                <div style="text-align: center;">
-                  <button class="btn" type="submit" name="action">Entrar</button>
-                </div>
-              </div><!-- row -->
-            </form>
-          </div><!-- row -->
+          
         </div><!-- modal-content -->
         <div class="modal-footer">
-            <a href="#modal_register" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
+            <a href="#modal_register" rel="modal:open" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
         </div>
-    </div><!-- modal1 -->
+    </div><!-- modal_login -->
 
     <!-- Modal to Sign Up -->
     <div id="modal_register" class="modal">
         <div class="modal-content">
         <h4>Registre-se</h4>
-        <div class="">
-            <form class="">
-              <div class="">
-                <div class="">
-                 <!-- icon here -->
-                  <input type="text" class="validate">
-                  <label>Nome</label>
-                </div>
-
-                <div class="">
-                    <!-- icon here -->
-                    <input type="text" class="validate">
-                    <label>Sobrenome</label>
-                  </div>
-
-                <div class="">
-                  <!-- icon here -->
-                  <input type="email" class="validate">
-                  <label>Email</label>
-                </div>
-
-                <div class="">
-                  <!-- icon here -->
-                  <input type="password" class="validate">
-                  <label>Senha</label>
-                  <div style="text-align: center;">
-                    <button class="btn" type="submit" name="action">Entrar</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+       
+        </div><!-- modal-content -->
         <div class="modal-footer">
-        <a href="#modal_login" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Já tem um login?</span></a>
+        <a href="#modal_login" rel="modal:open" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Já tem um login?</span></a>
         </div>
-    </div><!-- modal2 -->
+    </div><!-- modal_register -->
 
     <!-- Desktop Menu -->
     <nav class="nav-desktop">
@@ -100,8 +54,8 @@
               <a href="#"><img src="images/Hamburger_icon.svg.png"></a>
             </div>
             <div style="float: right;" class="hide-on-desktop">
-                <a class="btn-mobile modal-trigger" href="#modal_login">Login</a>
-                <a class="btn-mobile modal-trigger" href="#modal_register">Registrar</a>
+                <a class="btn-mobile modal-trigger" href="#modal_login" rel="modal:open">Login</a>
+                <a class="btn-mobile modal-trigger" href="#modal_register" rel="modal:open">Registrar</a>
             </div><!-- hide-on-desktop -->
         </div><!-- container -->
       </nav>
@@ -115,16 +69,11 @@
 
     <section id="top" class="bg-top">
       <div class="container">
-        <div class="">
-          <div class="">
-            <div class="">
-              </br>
+            <div class="text-top">
               <h1 class="title">Yugioh - DataBase</h1>
               <h4 class="title">Banco de dados de cartas e personagens</h4>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque repudiandae odio eligendi aperiam unde, eaque rem veritatis impedit id numquam laboriosam perspiciatis, labore, corrupti similique fuga amet. Exercitationem, labore?</p>
             </div><!-- inner text-center -->
-          </div><!-- col-lg-12 -->
-        </div><!-- row -->
       </div><!-- container -->
     </section>
 
@@ -144,6 +93,7 @@
       </div><!-- container -->
     </section>
     <script src="js/jquery-3.5.1.js"></script><!-- Jquery CSS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> <!-- Jquery Modal-->
     <script src="js/functions.js"></script><!-- Normal JS-->
 </body>
 </html>

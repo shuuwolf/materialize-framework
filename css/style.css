@@ -26,6 +26,7 @@ body,html{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.38'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%230a0311' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2312071c' cx='50' cy='100' r='50'/%3E%3Cg fill='%23160b26' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23180e31' cx='50' cy='200' r='50'/%3E%3Cg fill='%231b0f3c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e1047' cx='50' cy='300' r='50'/%3E%3Cg fill='%23201153' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2322125f' cx='50' cy='400' r='50'/%3E%3Cg fill='%2323126b' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23241378' cx='50' cy='500' r='50'/%3E%3Cg fill='%23251384' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23261391' cx='50' cy='600' r='50'/%3E%3Cg fill='%2325139e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%232513ab' cx='50' cy='700' r='50'/%3E%3Cg fill='%232312b9' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%232112c7' cx='50' cy='800' r='50'/%3E%3Cg fill='%231e11d4' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23190fe2' cx='50' cy='900' r='50'/%3E%3Cg fill='%23120df1' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23050bff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: contain;
+    font-family: 'Lato', sans-serif;
 }
 
 /***Classes Gerais***/
@@ -123,13 +124,13 @@ nav{
 /***Tipografia***/
 
 p.description{
-    position: relative;
-    bottom: -200px;
+    position: absolute;
+    bottom: 100px;
+    max-width: 1190px;
     color: #c6c9d8;
     font-size: 28px;
     line-height: 40px;
     margin: 0;
-    padding: 0 2%;
     font-weight: 300;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -138,6 +139,8 @@ p.description{
     color: white;
     text-shadow: 2px 2px 2px red;
 }
+
+/***MODAL***/
 
 /***Sessão Do Topo***/
 
@@ -149,6 +152,14 @@ p.description{
     max-width: 1200px;
     min-height: 70%;
     margin: 0 auto;
+}
+
+.text-top h1{
+    font-size: 60px;
+}
+
+.text-top h4{
+    font-size: 40px;
 }
 
 /***Sessão Lead***/
@@ -208,29 +219,29 @@ section.lead .container h2{ /***Copied From w3Scholl***/
 
 .lead-tell{
     text-align: center;
+    margin-top: 30px;
 }
 
 .lead-tell h3{
     color: white;
+    font-size: 26px;
 }
 
 .lead-tell p{
     color: #ccc;
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .lead-tell a{
     text-shadow: 1px 1px 3px black;
+    padding: 15px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
 }
 
 /***MEDIA QUERIES***/
-
-@media screen and (max-width:992px){
-    .hide-on-desktop{
-        display: block;
-    }
-}
 
 @media only screen and (max-width:768px){
     .bg-top{
@@ -246,6 +257,9 @@ section.lead .container h2{ /***Copied From w3Scholl***/
         background-color: rgba(0, 0, 0, 1);
     }
 
+    .hide-on-desktop{
+        display: block;
+    }
 }
 
 /***Animações***/
@@ -264,11 +278,25 @@ section.lead .container h2{ /***Copied From w3Scholl***/
     }
 }
 
-@-webkit-keyframes glow {   /***Copied From w3Scholl***/
+@keyframes glow {   /***Copied From w3Scholl***/
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(20, 223, 250, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 15px rgba(20, 223, 250, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(20, 223, 250, 0);
+	}
+}
