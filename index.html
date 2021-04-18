@@ -16,8 +16,9 @@
     <!-- Modal to Sign In -->
     <div id="modal_login" class="modal">
         <div class="modal-content">
-        <h4>Login</h4>
-          
+          <span class="close">&times;</span>
+          <h4>Login</h4>
+          <!-- Formulario vai aqui -->
         </div><!-- modal-content -->
         <div class="modal-footer">
             <a href="#modal_register" rel="modal:open" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Não tem um login?</span></a>
@@ -27,11 +28,12 @@
     <!-- Modal to Sign Up -->
     <div id="modal_register" class="modal">
         <div class="modal-content">
-        <h4>Registre-se</h4>
-       
+        <span class="close">&times;</span>
+          <h4>Registre-se</h4>
+          <!-- Formulario vai aqui -->
         </div><!-- modal-content -->
         <div class="modal-footer">
-        <a href="#modal_login" rel="modal:open" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Já tem um login?</span></a>
+        <a href="#modal_login" class="modal-trigger modal-close btn"><span style="color: red;text-decoration: underline;">Já tem um login?</span></a>
         </div>
     </div><!-- modal_register -->
 
@@ -50,22 +52,26 @@
                 <a class="btn modal-trigger" href="#modal_register">Registrar</a>
             </ul>
             </div><!-- nav-wrapper -->
-            <div style="float: left;" class="hide-on-desktop">
-              <a href="#"><img src="images/Hamburger_icon.svg.png"></a>
+            <div id="nav-div" style="float: left;" class="hide-on-desktop">
+              <a href="#"><img src="images/Hamburger_icon.svg.png"></a> <!-- SVG Hamburguer -->
+
+              <div class="clear"></div><!-- Clearing Float -->
             </div>
             <div style="float: right;" class="hide-on-desktop">
-                <a class="btn-mobile modal-trigger" href="#modal_login" rel="modal:open">Login</a>
-                <a class="btn-mobile modal-trigger" href="#modal_register" rel="modal:open">Registrar</a>
+                <a class="btn-mobile modal-trigger" href="#modal_login">Login</a>
+                <a class="btn-mobile modal-trigger" href="#modal_register">Registrar</a>
             </div><!-- hide-on-desktop -->
         </div><!-- container -->
       </nav>
 
-    <!-- Mobile Menu -->
-      <ul class="sidenav"><!--menu escondido na lateral-->
-            <li><a href="Cards.html">Cards</a></li>
-            <li><a href="Personagens.html">Personagens</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-      </ul><!-- Side Nav for Mobile -->
+      <!-- Mobile Menu -->
+      <div id="nav-mobile">
+        <ul class="sidenav hide-on-desktop"><!--menu escondido na lateral-->
+          <li><a href="Cards.html">Cards</a></li>
+          <li><a href="Personagens.html">Personagens</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul><!-- Side Nav for Mobile -->
+      </div>
 
     <section id="top" class="bg-top">
       <div class="container">
@@ -73,7 +79,7 @@
               <h1 class="title">Yugioh - DataBase</h1>
               <h4 class="title">Banco de dados de cartas e personagens</h4>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque repudiandae odio eligendi aperiam unde, eaque rem veritatis impedit id numquam laboriosam perspiciatis, labore, corrupti similique fuga amet. Exercitationem, labore?</p>
-            </div><!-- inner text-center -->
+            </div><!-- text-top -->
       </div><!-- container -->
     </section>
 
