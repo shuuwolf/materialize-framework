@@ -179,7 +179,7 @@ p.description{
 /***Sessão Do Topo***/
 
 .bg-top{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'><rect fill='#000000' width='100' height='1000'/><g ><circle fill='#000000' cx='50' cy='0' r='50'/><g fill='#030107' ><circle cx='0' cy='50' r='50'/><circle cx='100' cy='50' r='50'/></g><circle fill='#05010d' cx='50' cy='100' r='50'/><g fill='#080212' ><circle cx='0' cy='150' r='50'/><circle cx='100' cy='150' r='50'/></g><circle fill='#0a0217' cx='50' cy='200' r='50'/><g fill='#0d031a' ><circle cx='0' cy='250' r='50'/><circle cx='100' cy='250' r='50'/></g><circle fill='#0e031e' cx='50' cy='300' r='50'/><g fill='#100421' ><circle cx='0' cy='350' r='50'/><circle cx='100' cy='350' r='50'/></g><circle fill='#110525' cx='50' cy='400' r='50'/><g fill='#110529' ><circle cx='0' cy='450' r='50'/><circle cx='100' cy='450' r='50'/></g><circle fill='#11062c' cx='50' cy='500' r='50'/><g fill='#110730' ><circle cx='0' cy='550' r='50'/><circle cx='100' cy='550' r='50'/></g><circle fill='#100834' cx='50' cy='600' r='50'/><g fill='#0f0938' ><circle cx='0' cy='650' r='50'/><circle cx='100' cy='650' r='50'/></g><circle fill='#0e093c' cx='50' cy='700' r='50'/><g fill='#0c0a40' ><circle cx='0' cy='750' r='50'/><circle cx='100' cy='750' r='50'/></g><circle fill='#0b0a44' cx='50' cy='800' r='50'/><g fill='#080b48' ><circle cx='0' cy='850' r='50'/><circle cx='100' cy='850' r='50'/></g><circle fill='#060b4c' cx='50' cy='900' r='50'/><g fill='#030b50' ><circle cx='0' cy='950' r='50'/><circle cx='100' cy='950' r='50'/></g><circle fill='#000b54' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-image:url('../images/background-top.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -199,7 +199,7 @@ p.description{
 /***Sessão Lead***/
 
 section.lead{
-    background: url('/images/background-cards.svg'); 
+    background-image: url('../images/background-cards.svg'); 
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 50px 0; 
