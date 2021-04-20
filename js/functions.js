@@ -11,7 +11,38 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1218,
+                settings: {
+                    slidesToShow:3,
+                }
+            },
+
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow:5,
+                }
+            },
+
+            {
+                breakpoint: 651,
+                settings: {
+                    slidesToShow:4,
+                    arrows: false,
+                }
+            },
+
+            {
+                breakpoint: 461,
+                settings: {
+                    slidesToShow:3,
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 });

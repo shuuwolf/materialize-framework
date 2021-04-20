@@ -276,17 +276,43 @@ section.lead .container h2{ /***Copied From w3Scholl***/
 
 /*** Sessao Carousel ***/
 
+.slide{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(3, 3, 82);
+}
+
 .carousel {
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
     background-color: black;
 }
 
 .carousel img {
-    height: 430px;
+    max-height: 398px;
 }
 
 /***MEDIA QUERIES***/
+
+@media only screen and (max-width:1218px){
+    .carousel {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: black;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .carousel img {
+            max-height: 300px;
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: black;
+    }
+}
 
 @media only screen and (max-width:768px){
     .bg-top{
@@ -305,6 +331,17 @@ section.lead .container h2{ /***Copied From w3Scholl***/
     .hide-on-desktop{
         display: block;
     }
+
+    .carousel img {
+        max-height: 170px;
+    }   
+
+    .carousel {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: black;
+    }
+
 }
 
 /***Animações***/
@@ -332,7 +369,7 @@ section.lead .container h2{ /***Copied From w3Scholl***/
     }
 }
 
-@keyframes pulse {
+@keyframes pulse { /*** Copied from a awesome book '-' ***/
 	0% {
 		box-shadow: 0 0 0 0 rgba(20, 223, 250, 0.7);
 	}
