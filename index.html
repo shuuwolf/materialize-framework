@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Browser otimized for mobile-->
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonts -->
+
+    <title>Yu-gi-oh - Database</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--Normal CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet" type="text/css"><!-- Slick CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet" type="text/css"><!-- Slick Theme CSS -->
+</head>
+<body>
+
+    <!-- Desktop Menu -->
+    <nav class="nav-desktop">
+        <div class="container">
+            <div class="nav-wrapper">
+            <div class="on-title" style="text-align: center;">
+              <a href="#!" class="brand-logo">Yu-gi-oh</a>
+            </div>
+            <ul class="flex-nav">
+                <li><a href="Cards.html">Cards</a></li>
+                <li><a href="Personagens.html">Personagens</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <a class="btn" href="login.html">Login</a>
+                <a class="btn" href="register.html">Registrar</a>
+            </ul>
+            </div><!-- nav-wrapper -->
+            <div id="nav-div" style="float: left;" class="hide-on-desktop">
+              <a href="#"><img src="images/Hamburger_icon.svg.png"></a> <!-- SVG Hamburguer -->
+
+              <div class="clear"></div><!-- Clearing Float -->
+            </div>
+            <div style="float: right;" class="hide-on-desktop">
+                <a class="btn-mobile" href="login.html">Login</a>
+                <a class="btn-mobile" href="register.html">Registrar</a>
+            </div><!-- hide-on-desktop -->
+        </div><!-- container -->
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="nav-mobile">
+        <ul class="sidenav hide-on-desktop"><!--menu escondido na lateral-->
+          <li><a href="Cards.html">Cards</a></li>
+          <li><a href="Personagens.html">Personagens</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul><!-- Side Nav for Mobile -->
+      </div>
+
+    <section id="top" class="bg-top">
+      <div class="container">
+            <div class="text-top">
+              <h1 class="title">Yugioh - DataBase</h1>
+              <h4 class="title">Banco de dados de cartas e personagens</h4>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium atque repudianda eligendi aperiam unde, eaque rem veritatis impedit id numquam laboriosam perspiciatis, labore, corrupti similique fuga amet. Exercitationem, labore?</p>
+            </div><!-- text-top -->
+      </div><!-- container -->
+    </section>
+
+    <section class="lead">
+      <div class="container">
+        <h2>The Best Cards</h2>
+        <div class="hero-cards-anim">
+          <img id="card1" src="images/slifer.png">
+          <img id="card2" src="images/ObelisktheTormentor.png">
+          <img id="card3" src="images/Winged-Dragon-Ra.png">
+        </div><!-- hero-cards-anim -->
+        <div class="lead-tell">
+          <h3>Entre hoje e veja os incríveis detalhes tanto das cartas quanto dos personagens.</h3>
+          <p>*precisa estar logado para usar os recursos do database.</p>
+          <a class="btn" href="login.html">Entre Agora Mesmo</a>
+        </div>
+      </div><!-- container -->
+    </section><!-- lead -->
+
+    <section class="carousel">
+      <div><img src="images/cards/card01.png" alt="Arcana Force XXI - The World" /></div>
+      <div><img src="images/cards/card02.png" alt="Dark Ruler Ha Des" /></div>
+      <div><img src="images/cards/card03.png" alt="Sangan" /></div>
+      <div><img src="images/cards/card04.png" alt="The Portrait's Secret" /></div>
+      <div><img src="images/cards/card05.png" alt="The Earl of Demise" /></div>
+      <div><img src="images/cards/card06.png" alt="Headless Knight" /></div>
+      <div><img src="images/cards/card07.png" alt="Exodia, O Proibido" /></div>
+      <div><img src="images/cards/card08.jpg" alt="Juez" /></div>
+      <div><img src="images/cards/card09.jpg" alt="Buster Blader" /></div>
+      <div><img src="images/cards/card10.png" alt="Exchanging Souls" /></div>
+      <div><img src="images/cards/card01.png" alt="Arcana Force XXI - The World" /></div>
+      <div><img src="images/cards/card02.png" alt="Dark Ruler Ha Des" /></div>
+      <div><img src="images/cards/card03.png" alt="Sangan" /></div>
+      <div><img src="images/cards/card04.png" alt="The Portrait's Secret" /></div>
+      <div><img src="images/cards/card05.png" alt="The Earl of Demise" /></div>
+      <div><img src="images/cards/card06.png" alt="Headless Knight" /></div>
+      <div><img src="images/cards/card07.png" alt="Exodia, O Proibido" /></div>
+      <div><img src="images/cards/card08.jpg" alt="Juez" /></div>
+      <div><img src="images/cards/card09.jpg" alt="Buster Blader" /></div>
+      <div><img src="images/cards/card10.png" alt="Exchanging Souls" /></div>
+    </section><!-- carousel -->
+
+    <script src="js/jquery-3.5.1.js"></script><!-- Jquery JS-->
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script><!-- Slick JS -->
+    <script src="js/functions.js"></script><!-- Normal JS-->
+  </body>
+</html> 
