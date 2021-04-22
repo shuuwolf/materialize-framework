@@ -308,6 +308,62 @@ footer .container a{
     padding: 10px;
 }
 
+/***Form-login***/
+
+form.form-login{
+   width: 500px;
+   height: 600px;
+   background-color: white;
+   margin: 100px auto;
+   text-align: center;
+   border-radius: 30px;
+   box-shadow: 3px 3px 10px black;
+}
+
+form.form-login .change-form{
+    background: #6200FF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+}
+
+form.form-login .change-form a{
+    margin: 0 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+form.form-login .change-form a:hover{
+    text-decoration: underline;
+}
+
+form.form-login h2{
+    color: rgb(4, 4, 130);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    text-shadow:none;
+}
+
+form.form-login .form-input{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form.form-login .form-input input{
+    float: left;        
+}
+
+form.form-login .form-input i.email-svg{
+    float: left;
+    background-image: url('/images/envelope-regular.svg');
+    width: 20px;
+    height: 20px;
+}
+
 /***MEDIA QUERIES***/
 
 @media only screen and (max-width:1218px){

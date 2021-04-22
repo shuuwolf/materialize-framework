@@ -12,24 +12,61 @@
 </head>
 <body>
 
-    <!-- Desktop Menu -->
-    <nav class="nav-desktop-login">
-        <div class="container">
-            <div class="nav-wrapper">
-            <div class="on-title" style="text-align: center;">
-              <a href="#!" class="brand-logo">Yu-gi-oh</a>
-            </div>
-        </div><!-- container -->
-      </nav>
+     <!-- Desktop Menu -->
+     <nav class="nav-desktop">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="on-title" style="text-align: center;">
+            <a href="#!" class="brand-logo">Yu-gi-oh</a>
+          </div><!-- on-title -->
+          <ul class="flex-nav">
+              <li><a href="Cards.html">Cards</a></li>
+              <li><a href="Personagens.html">Personagens</a></li>
+              <li><a href="Contato.html">Contato</a></li>
+          </ul><!-- flex-nav -->
+        </div><!-- nav-wrapper -->
 
-      <!-- Mobile Menu -->
-      <div id="nav-mobile">
-        <ul class="sidenav hide-on-desktop"><!--menu escondido na lateral-->
-          <li><a href="Cards.html">Cards</a></li>
-          <li><a href="Personagens.html">Personagens</a></li>
-          <li><a href="Contato.html">Contato</a></li>
-        </ul><!-- Side Nav for Mobile -->
-      </div>
+          <div id="nav-div" style="float: left;" class="hide-on-desktop">
+            <a href="#"><img src="images/Hamburger_icon.svg.png"></a> <!-- SVG Hamburguer -->
+
+            <div class="clear"></div><!-- Clearing Float -->
+          </div><!-- hide-on-desktop -->
+      </div><!-- container -->
+    </nav><!-- nav-desktop -->
+
+    <!-- Mobile Menu -->
+    <div id="nav-mobile">
+      <ul class="sidenav hide-on-desktop"><!--menu hamburguer para mobile, chamei na linha 35-->
+        <li><a href="Cards.html">Cards</a></li>
+        <li><a href="Personagens.html">Personagens</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+      </ul><!-- Side Nav for Mobile -->
+    </div><!-- nav-mobile -->
+
+    <section>
+      <div class="container">
+        <form class="form-login">
+          <div class="change-form">
+            <a href="#">Login</a>
+            <a href="#">Registrar</a>
+          </div><!-- change-form -->
+          <h2>Login</h2>
+          <div class="form-input">
+            <i class="email-svg"></i>
+            <input type="email" placeholder="E-mail" name="email">
+            <div class="clear"></div><!-- Clearing Float -->
+          </div><!-- form-input -->
+
+          <div class="form-input">
+            <i class="password-svg"></i>
+            <input type="password" placeholder="Senha" name="senha">
+            <div class="clear"></div><!-- Clearing Float -->
+          </div><!-- form-input -->
+        </form><!-- form-login -->
+      </div><!-- container -->
+    </section>
+
+
     <script src="js/jquery-3.5.1.js"></script><!-- Jquery JS-->
     <script src="js/functions.js"></script><!-- Normal JS-->
 </body>
