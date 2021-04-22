@@ -261,7 +261,7 @@ section.lead .container h2{ /***Copied From w3Scholl***/
 }
 
 .lead-tell p{
-    color: #ccc;
+    color: red;
     font-size: 13px;
     margin-bottom: 20px;
 }
@@ -280,6 +280,7 @@ section.lead .container h2{ /***Copied From w3Scholl***/
     max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(3, 3, 82);
+    padding: 40px 0;
 }
 
 .carousel {
@@ -290,6 +291,21 @@ section.lead .container h2{ /***Copied From w3Scholl***/
 
 .carousel img {
     max-height: 398px;
+}
+
+/***FOOTER***/
+
+footer .container{
+    background: #6200FF;
+    height: 120px;
+    border: 5px solid black;
+    text-align: center;
+    color: white;
+}
+
+footer .container a{
+    width: 120px;
+    padding: 10px;
 }
 
 /***MEDIA QUERIES***/
