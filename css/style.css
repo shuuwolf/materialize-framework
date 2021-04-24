@@ -45,8 +45,8 @@ body,html{
 }
 
 section{
-    border-left: 5px solid black;
-    border-right: 5px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
 }
 
 .btn{
@@ -112,6 +112,7 @@ nav.nav-desktop-login{
 
 .flex-nav li a:hover{
     text-shadow:none;
+    letter-spacing: 1.5px;
 	text-shadow:0px 0px 15px #0ff , 0px 0px 25px #0ff , 0px 0px 5px #0ff;
 	transition: 0.5s;
     text-decoration: underline;   
@@ -128,7 +129,7 @@ nav.nav-desktop-login{
 }
 
 .sidenav{
-    /*display: none;*/
+    display: none;
     width: 100%;
     text-align: center;
 }
@@ -324,19 +325,25 @@ form.form-login .change-form{
     background: #6200FF;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding: 20px;
+    height: 80px;
+    max-width: 500px;
 }
 
 form.form-login .change-form a{
-    margin: 0 80px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
+    padding: 20px;
+    width: 250px;
 }
 
 form.form-login .change-form a:hover{
     text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow:none;
+	text-shadow:0px 0px 10px #0ff , 0px 0px 20px #0ff , 0px 0px 5px #0ff;
+	transition: 0.3s;   
 }
 
 form.form-login h2{
@@ -344,24 +351,92 @@ form.form-login h2{
     text-transform: uppercase;
     font-weight: bold;
     font-style: normal;
-    font-size: 40px;
+    font-size: 50px;
     text-shadow:none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form.form.login .center-input{
+    text-align: center;
+    border-bottom: 3px solid #ccc;
 }
 
 form.form-login .form-input{
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
 form.form-login .form-input input{
     float: left;        
+    text-indent: 8px;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px; /*Center text */
+    margin-bottom: 30px;
 }
 
 form.form-login .form-input i.email-svg{
     float: left;
     background-image: url('/images/envelope-regular.svg');
-    width: 20px;
-    height: 20px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+form.form-login .form-input i.password-svg{
+    float: left;
+    background-image: url('/images/unlock-alt-solid.svg');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+form.form-login .center-input button{
+    margin: 30px 10% 10px 10%;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+    color: white;
+    background: #6200FF;
+    border: none;
+    border-radius: 10px;
+}
+
+form.form-login .center-input button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+form.form-login .center-input label{
+    float: left;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.line-through{
+    max-width: 400px;
+    display: block;
+    border: 1px solid #ccc;
+    margin: 15px auto 0 auto;
+}
+
+.pwd{
+    float: right;
+    margin-right: 50px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.pwd a{
+    font-weight: bold;
 }
 
 /***MEDIA QUERIES***/
@@ -413,8 +488,61 @@ form.form-login .form-input i.email-svg{
         margin: 0 auto;
         background-color: black;
     }
-
 }
+
+@media only screen and (max-width:520px){
+    form.form-login{
+        width: 320px;
+        height: 600px;
+        background-color: white;
+        margin: 100px auto;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px black;
+    }
+
+    form.form-login .change-form{
+        background: #6200FF;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 80px;
+        max-width: 320px;
+    }
+    
+    form.form-login .change-form a{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 20px;
+        width: 160px;
+    }
+    
+    form.form-login h2{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    form.form-login .form-input{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    form.form-login .form-input input{
+        width: 230px;
+    }
+    
+    form.form-login .center-input label{
+        margin-left: 30px;
+    }
+    
+    .line-through{
+        max-width: 250px;
+    }
+}
+
+
 
 /***Animações***/
 

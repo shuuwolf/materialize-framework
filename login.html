@@ -28,15 +28,14 @@
 
           <div id="nav-div" style="float: left;" class="hide-on-desktop">
             <a href="#"><img src="images/Hamburger_icon.svg.png"></a> <!-- SVG Hamburguer -->
-
             <div class="clear"></div><!-- Clearing Float -->
-          </div><!-- hide-on-desktop -->
+          </div><!-- nav-div -->
       </div><!-- container -->
     </nav><!-- nav-desktop -->
 
     <!-- Mobile Menu -->
     <div id="nav-mobile">
-      <ul class="sidenav hide-on-desktop"><!--menu hamburguer para mobile, chamei na linha 35-->
+      <ul class="sidenav"><!--menu hamburguer para mobile-->
         <li><a href="Cards.html">Cards</a></li>
         <li><a href="Personagens.html">Personagens</a></li>
         <li><a href="Contato.html">Contato</a></li>
@@ -47,24 +46,42 @@
       <div class="container">
         <form class="form-login">
           <div class="change-form">
-            <a href="#">Login</a>
-            <a href="#">Registrar</a>
+            <a style="float: left;" href="#">Login</a>
+            <a style="float: right;" href="#">Registrar</a>
           </div><!-- change-form -->
           <h2>Login</h2>
-          <div class="form-input">
-            <i class="email-svg"></i>
-            <input type="email" placeholder="E-mail" name="email">
-            <div class="clear"></div><!-- Clearing Float -->
-          </div><!-- form-input -->
+          <div class="center-input">
+            <div class="form-input">
+              <i class="email-svg"></i>
+              <input type="email" placeholder="E-mail" name="email">
+              <div class="clear"></div><!-- Clearing Float -->
+            </div><!-- form-input -->
 
-          <div class="form-input">
-            <i class="password-svg"></i>
-            <input type="password" placeholder="Senha" name="senha">
+            <div class="form-input">
+              <i class="password-svg"></i>
+              <input type="password" placeholder="Senha" name="senha">
+              <div class="clear"></div><!-- Clearing Float -->
+            </div><!-- form-input -->
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
             <div class="clear"></div><!-- Clearing Float -->
-          </div><!-- form-input -->
+          </div><!-- center-input -->
+          <div class="line-through"></div><!-- line-through -->
+          <span class="pwd">Esqueceu a <a href="#">senha</a>?</span>
         </form><!-- form-login -->
       </div><!-- container -->
     </section>
+
+    <footer>
+      <div class="container">
+        <h2>Feito por ShuuWolf</h2>
+        <h2>47 9999 9999</h2>
+        <a href="#top" class="btn">Voltar ao topo</a>
+      </div><!-- container -->
+    </footer>
 
 
     <script src="js/jquery-3.5.1.js"></script><!-- Jquery JS-->

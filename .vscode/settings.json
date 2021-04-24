@@ -1,0 +1,9 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth",
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#b700ff",
+        "editorCursor.foreground": "#00fc15",
+    }
+}
