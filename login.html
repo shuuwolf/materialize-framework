@@ -42,35 +42,36 @@
       </ul><!-- Side Nav for Mobile -->
     </div><!-- nav-mobile -->
 
-    <section>
+    <section id="login-section">
       <div class="container">
         <form class="form-login">
           <div class="change-form">
-            <a style="float: left;" href="#">Login</a>
+            <a style="float: left;" href="login.html">Login</a>
             <a style="float: right;" href="#">Registrar</a>
           </div><!-- change-form -->
           <h2>Login</h2>
           <div class="center-input">
             <div class="form-input">
               <i class="email-svg"></i>
-              <input type="email" placeholder="E-mail" name="email">
+              <input type="email" placeholder="E-mail" name="email" required>
               <div class="clear"></div><!-- Clearing Float -->
             </div><!-- form-input -->
 
             <div class="form-input">
               <i class="password-svg"></i>
-              <input type="password" placeholder="Senha" name="senha">
+              <input type="password" placeholder="Senha" name="senha" required>
               <div class="clear"></div><!-- Clearing Float -->
             </div><!-- form-input -->
 
             <button type="submit">Login</button>
             <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
+              <input type="checkbox" checked="checked" name="remember"> Lembrar a senha
             </label>
             <div class="clear"></div><!-- Clearing Float -->
           </div><!-- center-input -->
           <div class="line-through"></div><!-- line-through -->
           <span class="pwd">Esqueceu a <a href="#">senha</a>?</span>
+          <div class="clear"></div><!-- Clearing Float -->
         </form><!-- form-login -->
       </div><!-- container -->
     </section>
