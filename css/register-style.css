@@ -1,0 +1,82 @@
+form.form-login .change-form a.register-link{
+    color: #ff0000;
+}
+
+form.form-login .change-form a.register-link:hover{ /*Resetando efeito do hover*/
+    text-decoration: none;
+    letter-spacing: normal;
+    text-shadow:none;
+	transition: none; 
+    cursor: no-drop;
+}
+
+form.form-login .form-input i.telefone-svg{
+    float: left;
+    background-image: url('../images/phone-alt-solid.svg');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+form.form-login{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px black;
+ }
+
+ @media only screen and (max-width:520px){
+    form.form-login{
+        width:100%;
+        height: 600px;
+        background-color: white;
+        margin: 100px auto;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px black;
+    }
+
+    form.form-login .change-form{
+        background: #6200FF;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 80px;
+        max-width: 100%;
+    }
+    
+    form.form-login .change-form a{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 20px;
+        width: 50%;
+    }
+    
+    form.form-login h2{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    form.form-login .form-input{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    form.form-login .form-input input{
+        width: 250px;
+    }
+    
+    form.form-login .center-input label{
+        margin-left: 30px;
+    }
+    
+    .line-through{
+        max-width: 80%;
+    }
+}

@@ -114,8 +114,8 @@ nav.nav-desktop-login{
 
 .flex-nav li a:hover{
     text-shadow:none;
-    letter-spacing: 1.5px;
-	text-shadow:0px 0px 15px #0ff , 0px 0px 25px #0ff , 0px 0px 5px #0ff;
+    letter-spacing: 1.2px;
+	text-shadow:0px 0px 10px #0ff , 0px 0px 15px #0ff , 0px 0px 5px #0ff;
 	transition: 0.5s;
     text-decoration: underline;   
 }
@@ -336,7 +336,7 @@ form.form-login .change-form{
     max-width: 500px;
 }
 
-form.form-login .change-form a{
+form.form-login .change-form  a{
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -347,10 +347,22 @@ form.form-login .change-form a{
 
 form.form-login .change-form a:hover{
     text-decoration: underline;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
     text-shadow:none;
-	text-shadow:0px 0px 10px #0ff , 0px 0px 20px #0ff , 0px 0px 5px #0ff;
+	text-shadow:0px 0px 2px #0ff , 0px 0px 3px #0ff , 0px 0px 2px #0ff;
 	transition: 0.3s;   
+}
+
+form.form-login .change-form a.login-link{
+    color: #ff0000;
+}
+
+form.form-login .change-form a.login-link:hover{ /*Resetando efeito do hover*/
+    text-decoration: none;
+    letter-spacing: normal;
+    text-shadow:none;
+	transition: none; 
+    cursor: no-drop;
 }
 
 form.form-login h2{

@@ -5,5 +5,6 @@
     "workbench.colorCustomizations": {
         "editorCursor.background": "#b700ff",
         "editorCursor.foreground": "#00fc15",
-    }
+    },
+    "synthwave84.brightness": 1
 }
