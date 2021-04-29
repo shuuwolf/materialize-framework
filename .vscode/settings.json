@@ -1,10 +1,10 @@
 {
-    "editor.cursorStyle": "block",
+    "editor.cursorStyle": "line",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorBlinking": "smooth",
     "workbench.colorCustomizations": {
         "editorCursor.background": "#b700ff",
-        "editorCursor.foreground": "#00fc15",
+        "editorCursor.foreground": "#28f000",
     },
     "synthwave84.brightness": 1
 }
