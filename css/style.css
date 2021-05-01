@@ -120,6 +120,16 @@ nav.nav-desktop-login{
     text-decoration: underline;   
 }
 
+.user-link{ /* USER MENU */
+    position: relative;
+    top: -40px;
+    right: 20px;
+}
+
+.user-link img{ /* USER IMG */
+    width: 30px;
+}
+
 .hide-on-desktop{
     display: none;
 }
@@ -571,12 +581,27 @@ form.form-login .center-input label{
         margin: 0 auto;
         background-color: black;
     }
+
+    .user-link{ /* USER MENU */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #nav-div{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
 }
 
 @media only screen and (max-width:520px){
+    .on-title{
+        margin-left: 45px;
+    }
     form.form-login{
-        width: 320px;
-        height: 460px;
+        width: 95%;
+        height: 500px;
         background-color: white;
         margin: 100px auto;
         text-align: center;
@@ -588,17 +613,17 @@ form.form-login .center-input label{
         background: #6200FF;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        height: 60px;
-        max-width: 320px;
+        height: 80px;
+        max-width: 100%;
     }
     
     form.form-login .change-form a{
         color: white;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 28px;
         text-decoration: none;
         padding: 20px;
-        width: 160px;
+        width: 200px;
     }
     
     form.form-login h2{
@@ -608,20 +633,20 @@ form.form-login .center-input label{
     }
     
     form.form-login .form-input{
-        max-width: 300px;
+        max-width: 80%;
         margin: 0 auto;
     }
     
     form.form-login .form-input input{
-        width: 230px;
+        width: 80%;
     }
     
     form.form-login .center-input label{
-        margin-left: 30px;
+        margin-left: 50px;
     }
     
     .line-through{
-        max-width: 250px;
+        max-width: 80%;
     }
 }
 
