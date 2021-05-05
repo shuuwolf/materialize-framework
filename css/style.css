@@ -532,6 +532,41 @@ form.form-login .center-input label{
     color: #FCBA7F;
 }
 
+/***   Table-Cards  ***/
+
+#table_all_card{
+    background-color: white;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+#table_all_card tr th{
+    color: rgb(99, 98, 98);
+    width: 300px;
+    height: 30px;
+}
+
+#table_all_card tr th:first-child{
+    color: rgb(99, 98, 98);
+    width: 100px;
+    height: 30px;
+}
+
+#table_all_card tr td{
+    text-align: center;
+}
+
+#table_all_card tr td img{
+    max-width: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#table_all_card tr td img:hover{
+    transform: scale(5.0);
+}
+
 /***MEDIA QUERIES***/
 
 @media only screen and (max-width:1218px){
