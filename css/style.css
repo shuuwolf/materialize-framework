@@ -564,7 +564,8 @@ form.form-login .center-input label{
 }
 
 #table_all_card tr td img.preview-scale:hover{
-    transform: scale(5.0);
+    transform: scale(8.0);
+    transition: 2s;
 }
 
 .show-effect{
