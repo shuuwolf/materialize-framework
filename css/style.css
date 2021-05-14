@@ -130,14 +130,13 @@ nav.nav-desktop-login{
     width: 30px;
 }
 
-.hide-on-desktop{
+.hide-on-desktop{ /* SVG HAMBURGUER */
     display: none;
 }
 
-.hide-on-desktop img{
+.hide-on-desktop img{  /* SVG HAMBURGUER */
     width: 60px;
     height: 50px;
-    margin-left: 20px;
 }
 
 .sidenav{
@@ -541,6 +540,10 @@ form.form-login .center-input label{
     border-width: 2px;
 }
 
+#table_all_card tr:nth-child(odd){
+    background-color: rgb(209, 209, 209);
+}
+
 #table_all_card tr th{
     color: rgb(99, 98, 98);
     width: 300px;
@@ -564,8 +567,10 @@ form.form-login .center-input label{
 }
 
 #table_all_card tr td img.preview-scale:hover{
-    transform: scale(8.0);
+    transform: scale(8);
     transition: 2s;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .show-effect{
@@ -594,6 +599,13 @@ form.form-login .center-input label{
         max-width: 600px;
         margin: 0 auto;
         background-color: black;
+    }
+
+    #table_all_card tr td img.preview-scale:hover{
+        transform: scale(7.5);
+        transition: 1.5s;
+        margin-top: 120px;
+        margin-left: 120px;
     }
 }
 
@@ -627,14 +639,21 @@ form.form-login .center-input label{
 
     .user-link{ /* USER MENU */
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 20px;
     }
 
-    #nav-div{
+    #nav-div{   /* SVG HAMBURGUER */
         position: absolute;
         top: 20px;
         left: 20px;
+    }
+
+    #table_all_card tr td img.preview-scale:hover{
+        transform: scale(7);
+        transition: 1.5s;
+        margin-top: 150px;
+        margin-left: 150px;
     }
 }
 
@@ -690,6 +709,13 @@ form.form-login .center-input label{
     
     .line-through{
         max-width: 80%;
+    }
+
+    #table_all_card tr td img.preview-scale:hover{
+        transform: scale(5);
+        transition: 1.5s;
+        margin-top: 100px;
+        margin-left: 80px;
     }
 }
 

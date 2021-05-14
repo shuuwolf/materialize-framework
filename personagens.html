@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Browser otimized for mobile-->
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonts -->
+
+    <title>Yu-gi-oh - Database</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--Normal CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet" type="text/css"><!-- Slick CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet" type="text/css"><!-- Slick Theme CSS -->
+</head>
+<body>
+
+    <!-- Desktop Menu -->
+    <nav class="nav-desktop">
+        <div class="container">
+            <div class="nav-wrapper">
+            <div class="on-title" style="text-align: center;">
+              <a href="index.html" class="brand-logo">Yu-gi-oh</a>
+            </div><!-- nav-wrapper -->
+            <ul class="flex-nav">
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="Personagens.html">Personagens</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul><!-- flex-nav -->
+            <a class="user-link" style="float: right;" href="#!"><img src="images/user-solid.png"></a>
+            <div class="clear"></div><!-- Clearing Float -->
+            </div><!-- nav-wrapper -->
+
+            <div id="nav-div" style="float: left;" class="hide-on-desktop">
+              <a href="#"><img src="images/Hamburger_icon.svg.png"></a> <!-- SVG Hamburguer -->
+              <div class="clear"></div><!-- Clearing Float -->
+            </div><!-- hide-on-desktop -->
+        </div><!-- container -->
+      </nav><!-- nav-desktop -->
+
+    <!-- Mobile Menu -->
+    <div id="nav-mobile">
+        <ul class="sidenav"><!--menu hamburguer para mobile, chamei na linha 35-->
+            <li><a href="cards.html">Cards</a></li>
+            <li><a href="Personagens.html">Personagens</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul><!-- Side Nav for Mobile -->
+    </div><!-- nav-mobile -->
+
+    <section class="table-cards">
+      <div class="container">
+        <table border="black" id="table_all_card">
+          <thead>
+            <tr>
+              <th>Preview</th> 
+              <th>Name</th>  <!-- Colocar apos back-end sistema de exibir em ordem alfabetica -->
+              <th>Age</th>  <!-- Colocar apos back-end sistema de exibir em ordem de maior/menor -->
+              <th>Deck</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr> <!-- apenas para arrumar os fundos de cada tabela(odd)-->
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Akiza.png" alt="Akiza Izinski"></td>
+                <td>Akiza Izinski</td>
+                <td>17</td>
+                <td>Black Rose/Plant</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Yugi_Muto.jpg" alt="Yugi Muto"></td>
+                <td>Yugi Muto</td>
+                <td>15</td>
+                <td>Strategy</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/JadenYuki.jpg" alt="Jaden Yuki"></td>
+                <td>Jaden Yuki</td>
+                <td>15</td>
+                <td>Elemental HERO</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/SetoKaiba.jpg" alt="Seto Kaiba"></td>
+                <td>Seto Kaiba</td>
+                <td>12</td>
+                <td>Power</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Joey_wheeler.jpg" alt="Joey Wheeler"></td>
+                <td>Joey Wheeler</td>
+                <td>16</td>
+                <td>Warrior/Beast-Warrior/Luck</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Tea_Gardner.png" alt="Téa Gardner"></td>
+                <td>Téa Gardner</td>
+                <td>16</td>
+                <td>Fairy/Spellcaster</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/MaiKujaku.png" alt="Mai Valentine"></td>
+                <td>Mai Valentine</td>
+                <td>24</td>
+                <td>Harpie/Amazoness</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Yuya_Sakaki.png" alt="Yuya Sakaki"></td>
+                <td>Yuya Sakaki</td>
+                <td>14</td>
+                <td>Performapal/Magician/Odd-Eyes</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Ryo2.png" alt="Bakura Ryou"></td>
+                <td>Bakura Ryou</td>
+                <td>18</td>
+                <td>Hidden</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/TristanTaylor.jpg" alt="Tristan Taylor"></td>
+                <td>Tristan Taylor</td>
+                <td>18</td>
+                <td>Military</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/Dartz.jpg" alt="Dartz"></td>
+                <td>Dartz</td>
+                <td>10000+</td>
+                <td>Orichalcos</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/jack atlas.jpg" alt="Jack Atlas"></td>
+                <td>Jack Atlas</td>
+                <td>19</td>
+                <td>Red Dragon Assault Mode</td>
+            </tr>
+
+            <tr>
+                <td><img class="preview-scale" src="images/personagens/crow hogan.jpg" alt="Crow Hogan"></td>
+                <td>Crow Hogan</td>
+                <td>17</td>
+                <td>Blackwing</td>
+            </tr>
+          </tbody>
+        </table><!-- table_all_cards -->
+      </div><!-- container -->
+    </section><!-- table-cards -->
+
+    <footer>
+      <div class="container">
+        <h2>Feito por ShuuWolf</h2>
+        <h2>47 9999 9999</h2>
+        <a href="#top" class="btn">Voltar ao topo</a>
+      </div><!-- container -->
+    </footer>
+
+    <script src="js/jquery-3.5.1.js"></script><!-- Jquery JS-->
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script><!-- Slick JS -->
+    <script src="js/functions.js"></script><!-- Normal JS-->
+  </body>
+</html> 
