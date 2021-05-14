@@ -1,0 +1,18 @@
+/* apenas para aplicar esse efeito na pagina dos personagens */
+/*como esta classe esta sendo usado em outras paginas, seria meio chato de atacar ela(ou mudar classe).*/
+
+#table_all_card tr td img.preview-scale:hover{
+    transform: scale(8);
+    transition: 1.5s;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width:768px){
+
+    #table_all_card tr td img.preview-scale:hover{
+        transform: scale(7);
+        transition: 1.5s;
+        margin-left: 150px;
+    }
+}
